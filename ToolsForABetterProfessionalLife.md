@@ -12,3 +12,13 @@
 - Tell the time do not build the clock
 - 1:1 meetings
 - Post Morten: 5 Why's RCA Analysis
+
+**Practical Steps:**
+
+1) Be Curious
+2) Stay Present
+3) Seek to Understand
+4) Don't multitask
+5) Don't pontificate
+6) Don't equate your expericnes with others
+7) Listen with your body
