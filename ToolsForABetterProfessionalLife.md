@@ -39,3 +39,9 @@
 - Find a hobby
 - Continue to grow
 - Create plans and stick to them
+
+### <ins>Summary</ins>
+
+**Your job is not always going to fulfill you. There will be some days that you just might be bored. Other days, you may not feel like going to work at all—go anyway…The number one lesson I can offer you is…to become so skilled, so vigilant, so flat-out fantastic at what you do that your talent cannot be dismissed.
+-Oprah Winfrey**
+  
