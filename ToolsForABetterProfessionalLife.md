@@ -2,7 +2,7 @@
 
 ## Communication Skills
 
-# Active Listening
+### Active Listening
 
 **Active listening is the practice of preparing to listen, observing what verbal and non-verbal messages are being sent, and then providing appropriate feedback for the sake of showing attentiveness to the message being presented. Active listening is listening to understand.**
 
@@ -22,3 +22,13 @@
 5) Don't pontificate
 6) Don't equate your expericnes with others
 7) Listen with your body
+
+### How To Prepare For Your Future
+
+- Profefesional Resume Building
+- Dress Professional
+- Do your research
+- Come Prepare to Sell
+- Body Language and Professional Presence
+- Ask Questions
+- Be Honest
