@@ -32,3 +32,10 @@
 - Body Language and Professional Presence
 - Ask Questions
 - Be Honest
+
+### <ins>Seek A balanced Life</ins>
+
+- It is never 100%
+- Find a hobby
+- Continue to grow
+- Create plans and stick to them
