@@ -134,8 +134,26 @@ int main() {
 
 ``` (int a, int b) ``` - Parameters and Type.
 
+### <ins>Constants</ins>
+```
+const double pi = 3.14;
+```
+
+```const``` - Declare const
 
 
+### <ins>To Run C++ Program</ins>
+
+Type into terminal:
+```
+g++ hello_world.cpp -o hello
+```
+
+Then type - ```./hello.exe```
+
+``` hello_world.cpp ``` -  The file you want to run
+
+``` hello ``` - Name you want for output file
 
  
 
