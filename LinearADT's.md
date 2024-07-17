@@ -19,6 +19,8 @@ Operations: Access, Delete, Insert and Traverse
 
 ## Linked lists
 
+![Singlelinkedlist](https://github.com/user-attachments/assets/0f34aab8-438f-4b4a-8ba4-764eaf7157a7)
+
 A linked list is a collection of nodes where each node contains data and a reference to the next node.
 
 <ins> Types: </ins>
