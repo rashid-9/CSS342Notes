@@ -117,7 +117,98 @@ T peek() override {
 
 ## Linked List Queue
 
+For this implementation we will have 2 pointers, a front pointer pointing to the the first node in the linked list and a rear pointer pointing to the last node in the linked list. This helps ensures that this queues operations are O(1), because traversal to enqueue is not needed.
 
+```
+#include <iostream>
+#include <stdexcept>
+using namespace std
+
+template<typename T>
+
+struct Node {
+ T data;
+ Node<T>* next;
+ Node(T value) : data(value), next(nullptr){}
+};
+
+template<typename T>
+
+class Queue {
+ private:
+  Node<T>* front = nullptr;
+  Node<T>* end = nullptr;
+
+public:
+
+Queue() : front(nullptr), end(nullptr){}
+
+bool isEmpty(){
+ if(front == end == nullptr){
+   return true;
+}
+return false;
+}
+
+void enqueue(T val){
+  Node<T>* newNode = new Node<T>(val);
+  if(isEmpty()){
+   front = newNode;
+   end = newNode;
+  }
+  else {
+   end->next = newNode;
+   end = newNode;
+}
+}
+
+void dequeue() {
+  if(isEmpty()){
+   throw underflow_error("Queue is empty");
+  }
+  Node<T>* temp = front;
+  front = front -> next;
+  if (front == nullptr){
+    end = nullptr;
+  }
+  delete temp;
+}
+
+T peek() {
+  if(isEmpty()){
+    throw underflow_error("Queue is empty");
+  }
+  else{
+  return front->data;
+  }
+}
+
+void display(){
+  if(isEmpty()){
+   throw underflow_error("Queue is empty");
+  }
+  Node<T>* temp = front;
+  while(temp!=nullptr) {
+   cout<< temp->data<< " ";
+   temp = temp->next;
+  }
+}
+
+~Queue(){
+ while(front != nullptr){
+  Node<T>* temp = front;
+  front = front->next;
+  delete temp;
+}
+}
+}
+
+```
+  
+
+ 
+ 
+ 
                                                                                                                                                                                                                                                           
 
 
