@@ -12,6 +12,8 @@ The Primary Linear ADT's are:
 
 ## Arrays
 
+![arrays_v1_202x220](https://github.com/user-attachments/assets/4341a8cc-5ea4-41ea-8b97-3556057deb6d)
+
 An array is a fixed size data structure with elements stored in contigous memeory locations
 Operations: Access, Delete, Insert and Traverse
 
