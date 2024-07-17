@@ -32,10 +32,14 @@ Operations: Insert, delete, traverse.
 
 ## Stacks
 
+![stack_representation](https://github.com/user-attachments/assets/6cffe763-e1a8-460f-9e08-98b9b9ed90a5)
+
 A stack is a data structure that follows a Last In First Out (LIFO) principle
 Operation: Push, Pop, Peek, isEmpty, isFull.
 
 ## Queues
+
+![Queue-Data-structure1](https://github.com/user-attachments/assets/c7a8bc57-693a-4e21-8161-0e3f6c2c9b2c)
 
 A Queue is a data structure that follows a First In First Out (FIFO) principle.
 
