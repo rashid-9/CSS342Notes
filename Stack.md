@@ -101,5 +101,102 @@ class ArrayStack{
     }
 };
 
+<ins> Linked List Stack </ins>
+
+A linked list-based stack dynamically allocates memory as needed, so it does not have a predefined size limit.
+
+Operations:
+
+ - Push: Add an element to the top of the stack.
+ - Pop: Remove an element from the top of the stack.
+ - Peek/Top: View the top element of the stack without removing it.
+ - isEmpty: Check if the stack is empty.
+
+## Linked List Stack
+
+```
+
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+template<typename T>
+
+struct Node<T> { 
+     int data;
+     Node<T>* next;
+     Node(T value) : data(value), next(nullptr){}
+};
+
+template<typename T>
+class LinkedListStack {
+   
+    Node<T>* top = nullptr;
+
+    public:
+
+    LinkedListStack(){}
+
+    ~LinkedListStack(){
+     Node<T>* current = top;
+     while(current!=nullptr){
+      top = top->next;
+      delete current;
+      current = top;
+      }
+     }
+
+    void push(T val){
+      Node<T>* newNode = new Node<T>(val);
+      if(top==nullptr){
+       top = newNode;
+       }
+       else{
+        newNode->next = top;
+        top = newNode;
+        }
+       }
+
+    T pop(){ 
+      if(top == nullptr){
+       throw underflow_error("Stack is empty);
+       }
+      else {
+       T returnVal = top->data;
+       Node<T>* temp = top;
+       top = top->next;
+       delete temp;
+       return returnVal
+       }
+     }
+
+     T peek(){
+      if(top == nullptr){
+       throw underflow_error("Stack is empty");
+       }
+       else {
+        return top->data;
+      }
+      }
+
+      void display(){
+       if(top == nullptr ) {
+        throw underflow_error("Stack is empty");
+        }
+        else{
+        Node<T>* temp = top;
+        while(temp!=nullptr){
+         cout << temp->data << " ";
+         temp = temp->next;
+       }
+       cout<< endl;
+       }
+       };
+
+       ```
+
+   
+
+
 ```
   
