@@ -1,4 +1,5 @@
-'''
+```
+
 #include <iostream>
 unsing namespace std;
 
@@ -48,13 +49,14 @@ int findLength(Node<T>*& head){
   
 
 void insertAtPos(Node<T>*& head, Node<T>*& tail, T val, int pos){
-Node<T>* newNode = new Node<T>(val);
+  Node<T>* newNode = new Node<T>(val);
 
   if(head==nullptr && pos ==0){
     head = tail = newNode;
     }
     else if((head == nullptr && pos != 0) || pos < 0){
       cout<< "Cannot place in position" << endl;
+      return;
     }
   if(pos > findLength(head)){
     cout<<"Position exceeds length of linked list"<<endl;
@@ -68,9 +70,11 @@ Node<T>* newNode = new Node<T>(val);
     current = current->next;
     count++;
     }
-  Node<T>* nodeAhead = current->next;
+
   newNode->next = current->next;
-  current->next->prev = newNode;
+   if (current->next != nullptr) {
+        current->next->prev = newNode;
+    }
   newNode->prev = current;
   current->next = newNode;
   }
@@ -78,6 +82,44 @@ Node<T>* newNode = new Node<T>(val);
         tail = newNode;
     }
   }
+
+void insertAfterPos(Node<T>*& head, Node<T>*& tail, T val, int pos){
+
+  Node<T>* newNode = new Node<T>(val);
+
+  if(head==nullptr && pos ==0){
+    head = tail = newNode;
+    }
+    else if((head == nullptr && pos != 0) || pos < 0){
+      cout<< "Cannot place in position" << endl;
+      return;
+    }
+  if(pos > findLength(head)){
+    cout<<"Position exceeds length of linked list"<<endl;
+    delete newNode;
+  }
+  
+  else {
+  int count = 0;
+  Node<T>* current = head;
+  while(count < pos){
+    current = current->next;
+    count++;
+    }
+ 
+  newNode->next = current->next;
+  if (current->next != nullptr) {
+        current->next->prev = newNode;
+    }
+  newNode->prev = current;
+  current->next = newNode;
+  }
+  if (newNode->next == nullptr) {
+        tail = newNode;
+    }
+  }
+  
+```
     
     
 
